@@ -386,7 +386,7 @@ func (c *Config) SetVerificationParam(param string) {
 }
 
 func (c *Config) SetVerificationToken(token string) {
-	c.verificationToken = ''
+	c.verificationToken = ""
 	c.cfg.Set(CFG_VERIFICATION_TOKEN, token)
 	log.Info("verification token set to: %s", token)
 	c.cfg.WriteConfig()
